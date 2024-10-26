@@ -12,8 +12,8 @@ spec:
           configMapkeyRef:
             name: nginx-config #name of the config map you are refering to
             key: course # env.name and config map key name can be different
-      - name: time
+      - name: duration
         valueFrom:
           configMapKeyRef:
             name: nginx-config
-            key: time
+            key: duration
