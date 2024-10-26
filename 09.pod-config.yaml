@@ -8,6 +8,13 @@ spec:
     image: nginx
     env:
       - name: course
-        value: devops
+        valueFrom:
+        configMapKeyRef:
+          name: nginx-config # name of the config map you are referring to
+          key: course #env.name and config map key name can be defferent 
       - name: time
-        value: "120hrs"
+        valueFrom:
+        configMapKeyRef:
+          name: nnginx-config
+          key: time
+        
