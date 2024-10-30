@@ -20,4 +20,4 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: us-docker.pkg.dev/google-samples/containers/gke/gb-frontend:v5
+        image: nginx
