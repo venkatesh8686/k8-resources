@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: ebs-dynamic
 spec:
-  storageClassName: expense-ebs
+  storageClassName: "expense-ebs"
   volumeName: ebs-dynamic
   accessModes:
     - ReadWriteOnce
@@ -12,7 +12,6 @@ spec:
       storage: 3Gi
 
 ---
-
 apiVersion: v1
 kind: Pod
 metadata:
@@ -34,7 +33,6 @@ spec:
       claimName: ebs-dynamic
 
 ---
-
 kind: Service
 apiVersion: v1
 metadata:
