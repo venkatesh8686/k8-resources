@@ -6,7 +6,7 @@ spec:
   storageClassName: "efs-expense"
   # volumeName: ebs-dynamic
   accessModes:
-    - ReadWriteM
+    - ReadWriteMany
   resources:
     requests:
       storage: 3Gi
